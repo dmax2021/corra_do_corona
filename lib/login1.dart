@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
-  @override
-  _LoginState createState() => _LoginState();
-}
-
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
@@ -22,7 +17,7 @@ class _LoginState extends State<Login> {
                     keyboardType: TextInputType.number,
                     style: TextStyle(color: Colors.blue, fontSize: 30),
                     decoration: InputDecoration(
-                      labelText:"Email",
+                      labelText:"Telefone do usuário",
                       labelStyle: TextStyle(color: Colors.black),
                     )
                 ),
@@ -33,7 +28,7 @@ class _LoginState extends State<Login> {
                     keyboardType: TextInputType.text,
                     style: TextStyle(color: Colors.blue, fontSize: 30),
                     decoration: InputDecoration(
-                      labelText:"Senha",
+                      labelText:"Senha do usuário",
                       labelStyle: TextStyle(color: Colors.black),
                     )
                 ),
@@ -44,7 +39,8 @@ class _LoginState extends State<Login> {
                     onPressed: () => {
                       print("pressionei o botão"),
                     },
-                    shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                    shape: new RoundedRectangleBorder(borderRadius:
+                    new BorderRadius.circular(30.0)),
                     child: Text(
                       "Enviar",
                       style: TextStyle(color: Colors.white, fontSize: 30),
@@ -56,7 +52,6 @@ class _LoginState extends State<Login> {
             ),
           ),
         )
-
     );
   }
 }
